@@ -6,10 +6,20 @@
     box-sizing: border-box;
 }
 
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
     font-family: 'Inter';
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 nav {
@@ -43,12 +53,14 @@ nav {
     width: 80px;
 }
 
-.nav-options p:hover {
+.nav-options a:hover {
     color: aliceblue;
     cursor: pointer;
 }
 
-.nav-options p {
+.nav-options a {
+    color: gray;
+    text-decoration: none;
     font-size: 13px;
 }
 
@@ -58,7 +70,7 @@ nav {
 
 
 main {
-    margin-top: 80px;
+    margin-top: 150px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -135,7 +147,6 @@ main {
     padding: 12px;
     border: 1.5px solid rgb(59, 59, 59);
     border-radius: 50%;
-    
 }
 
 .main-links svg {
@@ -151,7 +162,6 @@ main {
 
 
 .contact {
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -479,3 +489,21 @@ footer div {
 .about-right p svg {    
     color: aqua;
 } 
+
+svg {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #111;
+  z-index: 1000;
+}
